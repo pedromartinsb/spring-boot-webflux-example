@@ -14,7 +14,7 @@ public class Lec05BadRequestTest extends BaseTest {
     private WebClient webClient;
 
     @Test
-    public void fluxTest() {
+    public void badRequestTest() {
         Mono<Response> responseMono = this.webClient
                 .get()
                 .uri("reactive-math/square/{number}/throw", 5)
